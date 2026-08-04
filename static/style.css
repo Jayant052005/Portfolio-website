@@ -1,3 +1,7 @@
+
+/*          -----------------   General   -----------------------     */
+
+
 *{
     margin:0;
     padding:0;
@@ -16,6 +20,33 @@ body{
     overflow-x:hidden;
     width:100%;
 }
+.section{
+    height:100%;
+    padding:120px 10%;
+}
+h2{
+    text-align:center;
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom:40px;
+}
+.phase, .phase1, .phase2, .phase3{
+    background-image: url(back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    height: auto;
+    padding: 50px;
+    border-radius: 40px;
+    margin: 30px;
+    overflow: hidden;
+}
+
+/*          ----------------------------------------     */
+
+
+/*    -------------     Navigation   ---------------------          */
+
 
 nav{
     position:fixed;
@@ -56,10 +87,10 @@ nav{
     color:#00d4ff;
 }
 
-.section{
-    min-height:100vh;
-    padding:120px 10%;
-}
+/*          ----------------------------------------     */
+
+
+/*          -----------------      Home      -----------------------     */
 
 .content{
     width: 100%;
@@ -112,11 +143,14 @@ nav{
     box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
 }
 
-h2{
-    text-align:center;
-    font-size: clamp(28px, 4vw, 40px);
-    margin-bottom:40px;
-}
+
+
+/*          ----------------------------------------     */
+
+
+
+
+/*          -----------------    Page 2    -----------------------     */
 
 .about{
     text-align: center;
@@ -128,6 +162,12 @@ h2{
     font-size: clamp(16px, 2vw, 18px);
     line-height: 1.6;
 }
+
+/*          ----------------------------------------     */
+
+
+
+/*          ----------------    Page 3   ------------------------     */
 
 .project-container{
     display:grid;
@@ -158,6 +198,12 @@ h2{
     margin-bottom:10px;
     color:#00d4ff;
 }
+
+/*          ----------------------------------------     */
+
+
+
+/*          ------------------   Page 4  ----------------------     */
 
 .skills{
     align-items: center;
@@ -243,18 +289,11 @@ span{ margin-left: 0px; }
     max-width: 500px;
 }
 
-.phase, .phase1, .phase2, .phase3{
-    background-image: url(back1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 450px;
-    height: auto;
-    padding: 50px;
-    border-radius: 40px;
-    margin: 30px;
-    overflow: hidden;
-}
+/*          ----------------------------------------     */
+
+
+
+
 
 footer{
     text-align:center;
@@ -262,12 +301,18 @@ footer{
     margin-top:20px;
 }
 
+
+
 #hide{
     visibility:hidden;
     height: 0;
     margin: 0;
 }
 
+
+
+
+/*          ------------------    Page 5   ----------------------     */
 .contact-info{
     display:flex;
     justify-content:center;
@@ -287,6 +332,8 @@ i:hover{
     color: orangered;
     transition: 0.3s;
 }
+
+/*          ----------------------------------------     */
 
 /* ==========================================
    RESPONSIVE MEDIA QUERIES FOR MOBILE & TABLET
@@ -346,7 +393,7 @@ i:hover{
         padding: 30px 20px;
         margin: 20px 10px;
         border-radius: 20px;
-        min-height: auto;
+        min-height: 100vh;
     }
 
     .skills-list {
